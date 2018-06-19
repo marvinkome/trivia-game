@@ -1,0 +1,12 @@
+{
+    "editor.folding": true,
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.rulers": [
+        "100"
+    ]
+}
