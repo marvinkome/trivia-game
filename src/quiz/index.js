@@ -5,6 +5,9 @@ import { answerQuestion } from '../redux/actions';
 import Body from './body';
 
 export class Quiz extends React.Component {
+    showResults = () => {
+        this.props.goTo('results');
+    };
     dispatchAnswer = (answer) => {
         this.props.dispatch(answerQuestion(answer));
     };
@@ -13,6 +16,7 @@ export class Quiz extends React.Component {
             <Body
                 quiz={this.props.quiz.results}
                 onAnswer={this.dispatchAnswer}
+                showResults={this.showResults}
             />
         );
     }
@@ -20,7 +24,8 @@ export class Quiz extends React.Component {
 
 Quiz.propTypes = {
     quiz: types.object,
-    dispatch: types.func
+    dispatch: types.func,
+    goTo: types.func
 };
 
 function mapStateToProps(state) {

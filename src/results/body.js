@@ -2,7 +2,7 @@ import React from 'react';
 import types from 'prop-types';
 import { ShowResult } from './show-result';
 
-export function Body({ score, answers }) {
+export function Body({ score, answers, playAgain }) {
     const questions_length = answers.length;
 
     return (
@@ -22,7 +22,7 @@ export function Body({ score, answers }) {
                 ))}
             </div>
             <div className="cta">
-                <a>Play again</a>
+                <a onClick={playAgain}>Play again</a>
             </div>
         </div>
     );
@@ -30,5 +30,6 @@ export function Body({ score, answers }) {
 
 Body.propTypes = {
     score: types.number,
-    answers: types.array
+    answers: types.array,
+    playAgain: types.func
 };

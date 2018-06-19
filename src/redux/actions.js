@@ -4,3 +4,7 @@ export const answerQuestion = (answer) => ({
     type: types.answerQuestion,
     answer
 });
+
+export const resetQuiz = () => ({
+    type: types.resetQuiz
+});

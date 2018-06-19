@@ -4,7 +4,9 @@ exports[`App tests renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__unrendered__): <Home
+    goTo={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -34,13 +36,12 @@ ShallowWrapper {
             s find out
           </p>
         </div>,
-        <Link
+        <a
           className="btn"
-          replace={false}
-          to="/quiz"
+          onClick={[Function]}
         >
           begin
-        </Link>,
+        </a>,
       ],
       "className": "container",
     },
@@ -107,16 +108,15 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
           "children": "begin",
           "className": "btn",
-          "replace": false,
-          "to": "/quiz",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "begin",
-        "type": [Function],
+        "type": "a",
       },
     ],
     "type": "div",
@@ -144,13 +144,12 @@ ShallowWrapper {
               s find out
             </p>
           </div>,
-          <Link
+          <a
             className="btn"
-            replace={false}
-            to="/quiz"
+            onClick={[Function]}
           >
             begin
-          </Link>,
+          </a>,
         ],
         "className": "container",
       },
@@ -217,16 +216,15 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
             "children": "begin",
             "className": "btn",
-            "replace": false,
-            "to": "/quiz",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "begin",
-          "type": [Function],
+          "type": "a",
         },
       ],
       "type": "div",

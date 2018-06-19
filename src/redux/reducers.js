@@ -1,20 +1,7 @@
 import * as types from './actionTypes';
 
-export const updateObject = (oldObj, newValues) => {
+const updateObject = (oldObj, newValues) => {
     return Object.assign({}, oldObj, newValues);
-};
-
-export const updateNestedItemArray = (array, itemId, callback, key = 'id') => {
-    const updatedItems = array.map((item) => {
-        if (item[key] !== itemId) {
-            return item;
-        }
-
-        const updatedItem = callback(item);
-        return updatedItem;
-    });
-
-    return updatedItems;
 };
 
 function answerQuestion(state, answer) {
@@ -39,10 +26,23 @@ function answerQuestion(state, answer) {
     });
 }
 
+function resetQuiz(state) {
+    const user_answers = updateObject(state.user_answers, {
+        score: 0,
+        all_answers: []
+    });
+
+    return updateObject(state, {
+        user_answers
+    });
+}
+
 export default (state, action) => {
     switch (action.type) {
     case types.answerQuestion:
         return answerQuestion(state, action.answer);
+    case types.resetQuiz:
+        return resetQuiz(state);
     default:
         return state;
     }

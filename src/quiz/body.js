@@ -11,11 +11,6 @@ export default class Body extends React.Component {
         };
     }
     moveToNextQuestion = () => {
-        const quiz_length = this.props.quiz.length;
-        const currentIndex = this.state.currentQuestionIndex + 1;
-
-        if (currentIndex === quiz_length) return;
-
         this.setState({
             currentQuestionIndex: this.state.currentQuestionIndex + 1
         });
@@ -31,7 +26,14 @@ export default class Body extends React.Component {
         };
 
         this.props.onAnswer(data);
-        this.moveToNextQuestion();
+
+        const quiz_length = this.props.quiz.length - 1;
+
+        if (this.state.currentQuestionIndex === quiz_length) {
+            this.props.showResults();
+        } else {
+            this.moveToNextQuestion();
+        }
     };
     render() {
         const quiz = this.props.quiz;
@@ -39,27 +41,45 @@ export default class Body extends React.Component {
 
         return (
             <div className="container">
-                <QuizCard item={quiz[currentIndex]} />
-                <p className="answer">
+                <div className="content">
+                    <QuizCard item={quiz[currentIndex]} />
+                    <p className="answer">
+                        <a
+                            onClick={(e) =>
+                                this.answerQuestion(
+                                    e,
+                                    quiz[currentIndex],
+                                    'True'
+                                )
+                            }
+                            id="select-true"
+                        >
+                            True
+                        </a>
+                        <a
+                            onClick={(e) =>
+                                this.answerQuestion(
+                                    e,
+                                    quiz[currentIndex],
+                                    'False'
+                                )
+                            }
+                            id="select-false"
+                        >
+                            False
+                        </a>
+                    </p>
+                    <p className="quiz-counter">
+                        {currentIndex + 1}/{quiz.length}
+                    </p>
                     <a
                         onClick={(e) =>
-                            this.answerQuestion(e, quiz[currentIndex], 'True')
+                            this.answerQuestion(e, quiz[currentIndex], 'None')
                         }
                     >
-                        True
+                        Skip question
                     </a>
-                    <a
-                        onClick={(e) =>
-                            this.answerQuestion(e, quiz[currentIndex], 'False')
-                        }
-                    >
-                        False
-                    </a>
-                </p>
-                <p className="quiz-counter">
-                    {currentIndex + 1}/{quiz.length}
-                </p>
-                <a onClick={this.moveToNextQuestion}>Skip question</a>
+                </div>
             </div>
         );
     }
@@ -67,5 +87,6 @@ export default class Body extends React.Component {
 
 Body.propTypes = {
     quiz: types.array,
-    onAnswer: types.func
+    onAnswer: types.func,
+    showResults: types.func
 };

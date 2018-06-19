@@ -5,7 +5,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Body
+    onAnswer={[MockFunction]}
     quiz={Array []}
+    showResults={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,13 +27,13 @@ ShallowWrapper {
           className="answer"
         >
           <a
-            className="btn"
+            id="select-true"
             onClick={[Function]}
           >
             True
           </a>
           <a
-            className="btn"
+            id="select-false"
             onClick={[Function]}
           >
             False
@@ -45,15 +47,6 @@ ShallowWrapper {
           0
         </p>,
         <a
-          className="btn"
-          id="go-back"
-          onClick={[Function]}
-        >
-          Previous Question
-        </a>,
-        <a
-          className="btn"
-          id="go-front"
           onClick={[Function]}
         >
           Skip question
@@ -81,13 +74,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <a
-              className="btn"
+              id="select-true"
               onClick={[Function]}
             >
               True
             </a>,
             <a
-              className="btn"
+              id="select-false"
               onClick={[Function]}
             >
               False
@@ -103,7 +96,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "True",
-              "className": "btn",
+              "id": "select-true",
               "onClick": [Function],
             },
             "ref": null,
@@ -116,7 +109,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "False",
-              "className": "btn",
+              "id": "select-false",
               "onClick": [Function],
             },
             "ref": null,
@@ -151,23 +144,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Previous Question",
-          "className": "btn",
-          "id": "go-back",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Previous Question",
-        "type": "a",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": "Skip question",
-          "className": "btn",
-          "id": "go-front",
           "onClick": [Function],
         },
         "ref": null,
@@ -189,13 +166,13 @@ ShallowWrapper {
             className="answer"
           >
             <a
-              className="btn"
+              id="select-true"
               onClick={[Function]}
             >
               True
             </a>
             <a
-              className="btn"
+              id="select-false"
               onClick={[Function]}
             >
               False
@@ -209,15 +186,6 @@ ShallowWrapper {
             0
           </p>,
           <a
-            className="btn"
-            id="go-back"
-            onClick={[Function]}
-          >
-            Previous Question
-          </a>,
-          <a
-            className="btn"
-            id="go-front"
             onClick={[Function]}
           >
             Skip question
@@ -245,13 +213,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <a
-                className="btn"
+                id="select-true"
                 onClick={[Function]}
               >
                 True
               </a>,
               <a
-                className="btn"
+                id="select-false"
                 onClick={[Function]}
               >
                 False
@@ -267,7 +235,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "True",
-                "className": "btn",
+                "id": "select-true",
                 "onClick": [Function],
               },
               "ref": null,
@@ -280,7 +248,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "False",
-                "className": "btn",
+                "id": "select-false",
                 "onClick": [Function],
               },
               "ref": null,
@@ -315,23 +283,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Previous Question",
-            "className": "btn",
-            "id": "go-back",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "Previous Question",
-          "type": "a",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": "Skip question",
-            "className": "btn",
-            "id": "go-front",
             "onClick": [Function],
           },
           "ref": null,
@@ -357,6 +309,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Quiz
+    dispatch={[MockFunction]}
+    goTo={[MockFunction]}
     quiz={
       Object {
         "results": Array [],
@@ -375,7 +329,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "onAnswer": [Function],
       "quiz": Array [],
+      "showResults": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -387,7 +343,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "onAnswer": [Function],
         "quiz": Array [],
+        "showResults": [Function],
       },
       "ref": null,
       "rendered": null,
