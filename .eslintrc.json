@@ -5,10 +5,7 @@
         "es6": true,
         "jest": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
@@ -17,33 +14,17 @@
         },
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "plugins": ["react"],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "react/jsx-uses-vars": [
-            "error"
-        ],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "react/jsx-uses-vars": ["error"],
         "max-len": [
             "error",
             {
-                "code": 100
+                "code": 80
             }
         ]
     }

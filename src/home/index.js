@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import types from 'prop-types';
 
 export default class Home extends React.Component {
+    goToQuiz = (e) => {
+        e.preventDefault();
+        this.props.goTo('quiz');
+    }
     render() {
         return (
             <div className="container">
@@ -11,10 +15,12 @@ export default class Home extends React.Component {
                 <div className="body">
                     <p>Can you score 100%? let{'\''}s find out</p>
                 </div>
-                <Link to="/quiz" className="btn">
-                    begin
-                </Link>
+                <a onClick={this.goToQuiz} className="btn">begin</a>
             </div>
         );
     }
 }
+
+Home.propTypes = {
+    goTo: types.func
+};

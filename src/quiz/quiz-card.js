@@ -10,11 +10,12 @@ export function QuizCard({ item }) {
                 </p>
             </div>
             <div className="body">
-                <p className="question">{item.question} ?</p>
-                <p className="answer">
-                    <a>True</a>
-                    <a>False</a>
-                </p>
+                <p
+                    className="question"
+                    dangerouslySetInnerHTML={{
+                        __html: `${item.question}?`
+                    }}
+                />
             </div>
         </React.Fragment>
     );
