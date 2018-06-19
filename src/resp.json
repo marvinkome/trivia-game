@@ -1,0 +1,92 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Video Games",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "In &quot;The Sims&quot; series, the most members in a household you can have is 8.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "History",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "Japan was part of the Allied Powers during World War I.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "General Knowledge",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "This is the correct spelling of &quot;Supercalifragilisticexpialidocious&quot;.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "In &quot;Metal Gear Solid 2&quot;, you will see through the eyes of Psycho Mantis if you go first person during his boss fight.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "History",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "The USS Missouri (BB-63) last served in the Korean War.",
+            "correct_answer": "False",
+            "incorrect_answers": ["True"]
+        },
+        {
+            "category": "Entertainment: Board Games",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "The board game Go has more possible legal positions than the number of atoms in the visible universe.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "Science: Mathematics",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "In Topology, the complement of an open set is a closed set.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "The weapon Clint Eastwood uses in &quot;Dirty Harry&quot; was a .44 Automag.",
+            "correct_answer": "False",
+            "incorrect_answers": ["True"]
+        },
+        {
+            "category": "Politics",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "George Clinton, Vice President of the United States (1805-1812), is an ancestor of President Bill Clinton.",
+            "correct_answer": "False",
+            "incorrect_answers": ["True"]
+        },
+        {
+            "category": "General Knowledge",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question":
+                "Spoon theory is a theory, utilizing &quot;Spoons&quot; as a metaphor for energy they can use in a day.",
+            "correct_answer": "True",
+            "incorrect_answers": ["False"]
+        }
+    ]
+}
