@@ -31,6 +31,7 @@ function resetQuiz(state) {
     });
 
     return updateObject(state, {
+        quiz_data: {},
         user_answers
     });
 }

@@ -23,7 +23,9 @@ export function Body({ score, answers, playAgain }) {
                     ))}
                 </div>
                 <div className="cta">
-                    <a className="btn-block btn" onClick={playAgain}>Play again</a>
+                    <a className="btn-block btn" onClick={playAgain}>
+                        Play again
+                    </a>
                 </div>
             </div>
         </div>

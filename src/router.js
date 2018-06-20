@@ -37,11 +37,7 @@ export class Router extends React.Component {
  * @returns Consumer.Context<Component>
  */
 export function Route({ Component, path }) {
-    return (
-        <Consumer>
-            {(value) => path === value.path && <Component goTo={value.goTo} />}
-        </Consumer>
-    );
+    return <Consumer>{(value) => path === value.path && <Component goTo={value.goTo} />}</Consumer>;
 }
 
 Router.propTypes = {

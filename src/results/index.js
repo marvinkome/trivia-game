@@ -9,18 +9,12 @@ export class Results extends React.Component {
     playAgain = (e) => {
         e.preventDefault();
         this.props.dispatch(resetQuiz());
-        this.props.goTo('');
+        this.props.goTo('quiz');
     };
     render() {
         const { score, all_answers } = this.props.user_answers;
 
-        return (
-            <Body
-                score={score}
-                answers={all_answers}
-                playAgain={this.playAgain}
-            />
-        );
+        return <Body score={score} answers={all_answers} playAgain={this.playAgain} />;
     }
 }
 
