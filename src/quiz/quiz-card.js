@@ -11,7 +11,7 @@ export function QuizCard({ item }) {
                 <p
                     className="question"
                     dangerouslySetInnerHTML={{
-                        __html: `${item.question}?`
+                        __html: item.question
                     }}
                 />
             </div>

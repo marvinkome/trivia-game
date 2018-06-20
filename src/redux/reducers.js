@@ -7,9 +7,7 @@ const updateObject = (oldObj, newValues) => {
 function answerQuestion(state, answer) {
     const { correct_answer, user_answer, question } = answer;
     const passed = user_answer === correct_answer;
-    const score = passed
-        ? state.user_answers.score + 1
-        : state.user_answers.score;
+    const score = passed ? state.user_answers.score + 1 : state.user_answers.score;
     const new_answer = {
         question,
         user_answer,
@@ -37,12 +35,20 @@ function resetQuiz(state) {
     });
 }
 
+function setupQuiz(state, quiz_data) {
+    return updateObject(state, {
+        quiz_data
+    });
+}
+
 export default (state, action) => {
     switch (action.type) {
     case types.answerQuestion:
         return answerQuestion(state, action.answer);
     case types.resetQuiz:
         return resetQuiz(state);
+    case types.setupQuiz:
+        return setupQuiz(state, action.data);
     default:
         return state;
     }

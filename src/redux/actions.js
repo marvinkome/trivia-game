@@ -8,3 +8,8 @@ export const answerQuestion = (answer) => ({
 export const resetQuiz = () => ({
     type: types.resetQuiz
 });
+
+export const setupQuiz = (data) => ({
+    type: types.setupQuiz,
+    data
+});

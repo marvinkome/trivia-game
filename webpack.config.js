@@ -1,15 +1,15 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './index.html',
     filename: 'index.html',
     inject: 'body'
-})
+});
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: ['babel-polyfill', './src/index.js'],
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js',
@@ -27,7 +27,5 @@ module.exports = {
             { test: /\.less$/, loader: ['style-loader', 'css-loader', 'less-loader'] }
         ]
     },
-    plugins: [
-        HtmlWebpackPluginConfig
-    ]
-}
+    plugins: [HtmlWebpackPluginConfig]
+};
