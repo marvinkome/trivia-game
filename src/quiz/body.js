@@ -40,10 +40,10 @@ export default class Body extends React.Component {
         const currentIndex = this.state.currentQuestionIndex;
 
         return (
-            <div className="container">
+            <div className="container quiz">
                 <div className="content">
                     <QuizCard item={quiz[currentIndex]} />
-                    <p className="answer">
+                    <div className="options">
                         <a
                             onClick={(e) =>
                                 this.answerQuestion(
@@ -53,6 +53,7 @@ export default class Body extends React.Component {
                                 )
                             }
                             id="select-true"
+                            className="btn btn-block"
                         >
                             True
                         </a>
@@ -65,20 +66,22 @@ export default class Body extends React.Component {
                                 )
                             }
                             id="select-false"
+                            className="btn btn-block"
                         >
                             False
                         </a>
-                    </p>
-                    <p className="quiz-counter">
-                        {currentIndex + 1}/{quiz.length}
-                    </p>
-                    <a
-                        onClick={(e) =>
-                            this.answerQuestion(e, quiz[currentIndex], 'None')
-                        }
-                    >
-                        Skip question
-                    </a>
+                    </div>
+                    <div className="meta-options">
+
+                        <p className="quiz-counter">
+                            {currentIndex + 1}/{quiz.length}
+                        </p>
+                        <p>
+                            <a onClick={
+                                (e) => this.answerQuestion(e, quiz[currentIndex], 'None')
+                            }>Skip question</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         );

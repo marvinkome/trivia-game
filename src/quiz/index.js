@@ -3,6 +3,7 @@ import types from 'prop-types';
 import { connect } from 'react-redux';
 import { answerQuestion } from '../redux/actions';
 import Body from './body';
+import './styles.less';
 
 export class Quiz extends React.Component {
     showResults = () => {

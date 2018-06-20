@@ -2,8 +2,12 @@ body {
     background: #f7f7f7;
 }
 
+a {
+    color: #6a1b9a;
+}
+
 .content {
-    margin: 35% 3%;
+    margin: 25% 3%;
     padding: 5%;
     padding-bottom: 10%;
     background: #fafafa;
@@ -15,5 +19,47 @@ body {
 
     @media screen and (min-width: 900px) {
         margin: 10% 3%;
+    }
+
+    .header {
+        margin-bottom: 10%;
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 1rem 0rem 0rem;
+        }
+
+        @media screen and (min-width: 600px) {
+            margin-bottom: 5%;
+        }
+
+        @media screen and (min-width: 600px) {
+            font-size: 2.3rem;
+        }
+    }
+
+    .body {
+        margin-bottom: 10%;
+        p {
+            font-size: 17px;
+            color: #404040;
+        }
+
+        @media screen and (min-width: 600px) {
+            margin-bottom: 5%;
+        }
+    }
+
+    .btn {
+        text-transform: capitalize;
+        cursor: pointer;
+        background-color: #6a1b9a;
+        border: 1px solid #6a1b9a;
+
+        &:hover {
+            background-color: #8e24aa;
+            border: 1px solid #8e24aa;
+        }
     }
 }

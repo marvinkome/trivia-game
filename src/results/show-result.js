@@ -5,7 +5,7 @@ export function ShowResult({ resultType, question }) {
     return (
         <p className={`result ${resultType}`}>
             <span>{resultType} - </span>
-            {question}
+            <span dangerouslySetInnerHTML={{ __html: question }} />
         </p>
     );
 }

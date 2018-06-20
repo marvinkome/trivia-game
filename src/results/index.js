@@ -3,6 +3,7 @@ import types from 'prop-types';
 import { connect } from 'react-redux';
 import { Body } from './body';
 import { resetQuiz } from '../redux/actions';
+import './styles.less';
 
 export class Results extends React.Component {
     playAgain = (e) => {

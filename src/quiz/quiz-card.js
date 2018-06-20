@@ -5,9 +5,7 @@ export function QuizCard({ item }) {
     return (
         <React.Fragment>
             <div className="header">
-                <p>
-                    <span>{item.category}</span>
-                </p>
+                <p>{item.category}</p>
             </div>
             <div className="body">
                 <p
