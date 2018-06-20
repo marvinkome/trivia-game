@@ -19,110 +19,36 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="content"
+      >
         <div
           className="header"
         >
-          <h4>
-             Welcome to Trivia challange!!
-          </h4>
-        </div>,
+          <h1>
+             Welcome to the trivia challange!!
+          </h1>
+        </div>
         <div
           className="body"
         >
           <p>
-            Can you score 100%? let
+            You will be presented with 10 True or False questions. Can you score 100%? let
             '
-            s find out
+            s find out.
           </p>
-        </div>,
+        </div>
         <a
           className="btn"
           onClick={[Function]}
         >
           begin
-        </a>,
-      ],
-      "className": "container",
+        </a>
+      </div>,
+      "className": "container home",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <h4>
-             Welcome to Trivia challange!!
-          </h4>,
-          "className": "header",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": " Welcome to Trivia challange!!",
-          },
-          "ref": null,
-          "rendered": " Welcome to Trivia challange!!",
-          "type": "h4",
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <p>
-            Can you score 100%? let
-            '
-            s find out
-          </p>,
-          "className": "body",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Can you score 100%? let",
-              "'",
-              "s find out",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Can you score 100%? let",
-            "'",
-            "s find out",
-          ],
-          "type": "p",
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "begin",
-          "className": "btn",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "begin",
-        "type": "a",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -131,17 +57,17 @@ ShallowWrapper {
           <div
             className="header"
           >
-            <h4>
-               Welcome to Trivia challange!!
-            </h4>
+            <h1>
+               Welcome to the trivia challange!!
+            </h1>
           </div>,
           <div
             className="body"
           >
             <p>
-              Can you score 100%? let
+              You will be presented with 10 True or False questions. Can you score 100%? let
               '
-              s find out
+              s find out.
             </p>
           </div>,
           <a
@@ -151,7 +77,7 @@ ShallowWrapper {
             begin
           </a>,
         ],
-        "className": "container",
+        "className": "content",
       },
       "ref": null,
       "rendered": Array [
@@ -160,9 +86,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h4>
-               Welcome to Trivia challange!!
-            </h4>,
+            "children": <h1>
+               Welcome to the trivia challange!!
+            </h1>,
             "className": "header",
           },
           "ref": null,
@@ -171,11 +97,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": " Welcome to Trivia challange!!",
+              "children": " Welcome to the trivia challange!!",
             },
             "ref": null,
-            "rendered": " Welcome to Trivia challange!!",
-            "type": "h4",
+            "rendered": " Welcome to the trivia challange!!",
+            "type": "h1",
           },
           "type": "div",
         },
@@ -185,9 +111,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <p>
-              Can you score 100%? let
+              You will be presented with 10 True or False questions. Can you score 100%? let
               '
-              s find out
+              s find out.
             </p>,
             "className": "body",
           },
@@ -198,16 +124,16 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "Can you score 100%? let",
+                "You will be presented with 10 True or False questions. Can you score 100%? let",
                 "'",
-                "s find out",
+                "s find out.",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "Can you score 100%? let",
+              "You will be presented with 10 True or False questions. Can you score 100%? let",
               "'",
-              "s find out",
+              "s find out.",
             ],
             "type": "p",
           },
@@ -227,6 +153,152 @@ ShallowWrapper {
           "type": "a",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            <h1>
+               Welcome to the trivia challange!!
+            </h1>
+          </div>
+          <div
+            className="body"
+          >
+            <p>
+              You will be presented with 10 True or False questions. Can you score 100%? let
+              '
+              s find out.
+            </p>
+          </div>
+          <a
+            className="btn"
+            onClick={[Function]}
+          >
+            begin
+          </a>
+        </div>,
+        "className": "container home",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="header"
+            >
+              <h1>
+                 Welcome to the trivia challange!!
+              </h1>
+            </div>,
+            <div
+              className="body"
+            >
+              <p>
+                You will be presented with 10 True or False questions. Can you score 100%? let
+                '
+                s find out.
+              </p>
+            </div>,
+            <a
+              className="btn"
+              onClick={[Function]}
+            >
+              begin
+            </a>,
+          ],
+          "className": "content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1>
+                 Welcome to the trivia challange!!
+              </h1>,
+              "className": "header",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Welcome to the trivia challange!!",
+              },
+              "ref": null,
+              "rendered": " Welcome to the trivia challange!!",
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                You will be presented with 10 True or False questions. Can you score 100%? let
+                '
+                s find out.
+              </p>,
+              "className": "body",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You will be presented with 10 True or False questions. Can you score 100%? let",
+                  "'",
+                  "s find out.",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "You will be presented with 10 True or False questions. Can you score 100%? let",
+                "'",
+                "s find out.",
+              ],
+              "type": "p",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "begin",
+              "className": "btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "begin",
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

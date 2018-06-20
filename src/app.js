@@ -13,8 +13,6 @@ import 'materialize-css/dist/css/materialize.css';
 import './styles.less';
 
 // create state from initial data.
-// TODO: fetch initial data from api
-// create store in ./redux/store
 const store = createStore(state);
 
 export const App = () => (

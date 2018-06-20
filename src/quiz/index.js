@@ -10,7 +10,7 @@ export class Quiz extends React.Component {
         super(props);
 
         this.state = {
-            loading: false,
+            loading: true,
             error: false
         };
     }
@@ -35,8 +35,6 @@ export class Quiz extends React.Component {
                 loading: false,
                 error: true
             });
-
-            console.error(e); // eslint-disable-line
         }
     }
     showResults = () => {
