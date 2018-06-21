@@ -1,18 +1,58 @@
 .results {
     .content {
         margin: 5% 3%;
+        padding-top: 2%;
 
-        .header h1 {
-            text-align: center;
+        .header {
+            p {
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.5rem;
+                margin: 0;
+
+                &.score {
+                    font-size: 3.6rem;
+
+                    &.bad {
+                        color: #f44336;
+                    }
+
+                    &.okay {
+                        color: #ffc107;
+                    }
+
+                    &.good {
+                        color: #388e3c;
+                    }
+                }
+            }
         }
 
         .body.results {
-            .Failed span:first-child {
-                color: hsl(0, 93%, 45%);
-            }
+            .result-card {
+                background: hsl(0, 0%, 95%);
+                padding: 10px;
+                box-shadow: 0px 0px 3px 0px hsl(0, 0%, 58%);
+                margin-bottom: 15px;
+                border-radius: 12px;
 
-            .Passed span:first-child {
-                color: #6a1b9a;
+                p {
+                    margin: 0;
+                    display: flex;
+
+                    span:first-child {
+                        margin-right: 15px;
+                        font-size: 24px;
+
+                        &.Failed {
+                            color: #f44336;
+                        }
+
+                        &.Passed {
+                            color: #388e3c;
+                        }
+                    }
+                }
             }
         }
 

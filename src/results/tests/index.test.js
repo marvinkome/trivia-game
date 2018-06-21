@@ -25,7 +25,7 @@ describe('results unit tests', () => {
     it('calls play again when button is click', () => {
         const playAgain = jest.fn();
         const wrapper = shallow(<Body score={0} answers={[]} playAgain={playAgain} />);
-        wrapper.find('.btn-block').simulate('click');
+        wrapper.find('.btn').simulate('click');
         expect(playAgain).toBeCalled();
     });
 

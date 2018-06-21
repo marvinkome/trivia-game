@@ -57,9 +57,6 @@ export default class Body extends React.Component {
                     </a>
                 </div>
                 <div className="meta-options">
-                    <p className="quiz-counter">
-                        {currentIndex + 1}/{quiz.length}
-                    </p>
                     <p>
                         <a onClick={(e) => this.answerQuestion(e, quiz[currentIndex], 'None')}>
                             Skip question
@@ -69,10 +66,11 @@ export default class Body extends React.Component {
             </React.Fragment>
         );
     };
-    render_quiz = (currentIndex, quiz) => {
+    render_quiz = (currentIndex, quiz, quiz_length) => {
         return (
             <React.Fragment>
-                <QuizCard item={quiz[currentIndex]} />
+                <QuizCard 
+                    item={quiz[currentIndex]} currentInd={currentIndex + 1} length={quiz_length} />
                 {this.render_options(currentIndex, quiz)}
             </React.Fragment>
         );
@@ -80,7 +78,17 @@ export default class Body extends React.Component {
     render_loader = () => {
         return (
             <div className="loader center">
-                <h5>Loading questions, please wait</h5>
+                <div className="preloader-wrapper active">
+                    <div className="spinner-layer spinner-red-only">
+                        <div className="circle-clipper left">
+                            <div className="circle"></div>
+                        </div><div className="gap-patch">
+                            <div className="circle"></div>
+                        </div><div className="circle-clipper right">
+                            <div className="circle"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     };
@@ -107,7 +115,7 @@ export default class Body extends React.Component {
                         ? this.render_loader()
                         : this.props.error
                             ? this.render_error()
-                            : this.render_quiz(currentIndex, quiz)}
+                            : this.render_quiz(currentIndex, quiz, quiz.length)}
                 </div>
             </div>
         );

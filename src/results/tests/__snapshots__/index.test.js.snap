@@ -27,12 +27,19 @@ ShallowWrapper {
         <div
           className="header"
         >
-          <h1>
-            You scored 
+          <p
+            className="score good"
+          >
+            NaN
+            %
+          </p>
+          <p>
+            You got 
             0
-            /
+             out of 
             0
-          </h1>
+             questions correct
+          </p>
         </div>
         <div
           className="body results"
@@ -41,7 +48,7 @@ ShallowWrapper {
           className="cta"
         >
           <a
-            className="btn-block btn"
+            className="btn"
             onClick={[MockFunction]}
           >
             Play again
@@ -60,12 +67,19 @@ ShallowWrapper {
           <div
             className="header"
           >
-            <h1>
-              You scored 
+            <p
+              className="score good"
+            >
+              NaN
+              %
+            </p>
+            <p>
+              You got 
               0
-              /
+               out of 
               0
-            </h1>
+               questions correct
+            </p>
           </div>,
           <div
             className="body results"
@@ -74,7 +88,7 @@ ShallowWrapper {
             className="cta"
           >
             <a
-              className="btn-block btn"
+              className="btn"
               onClick={[MockFunction]}
             >
               Play again
@@ -90,36 +104,67 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h1>
-              You scored 
-              0
-              /
-              0
-            </h1>,
+            "children": Array [
+              <p
+                className="score good"
+              >
+                NaN
+                %
+              </p>,
+              <p>
+                You got 
+                0
+                 out of 
+                0
+                 questions correct
+              </p>,
+            ],
             "className": "header",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "You scored ",
-                0,
-                "/",
-                0,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  NaN,
+                  "%",
+                ],
+                "className": "score good",
+              },
+              "ref": null,
+              "rendered": Array [
+                NaN,
+                "%",
               ],
+              "type": "p",
             },
-            "ref": null,
-            "rendered": Array [
-              "You scored ",
-              0,
-              "/",
-              0,
-            ],
-            "type": "h1",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You got ",
+                  0,
+                  " out of ",
+                  0,
+                  " questions correct",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "You got ",
+                0,
+                " out of ",
+                0,
+                " questions correct",
+              ],
+              "type": "p",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -140,7 +185,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <a
-              className="btn-block btn"
+              className="btn"
               onClick={[MockFunction]}
             >
               Play again
@@ -154,7 +199,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Play again",
-              "className": "btn-block btn",
+              "className": "btn",
               "onClick": [MockFunction],
             },
             "ref": null,
@@ -180,12 +225,19 @@ ShallowWrapper {
           <div
             className="header"
           >
-            <h1>
-              You scored 
+            <p
+              className="score good"
+            >
+              NaN
+              %
+            </p>
+            <p>
+              You got 
               0
-              /
+               out of 
               0
-            </h1>
+               questions correct
+            </p>
           </div>
           <div
             className="body results"
@@ -194,7 +246,7 @@ ShallowWrapper {
             className="cta"
           >
             <a
-              className="btn-block btn"
+              className="btn"
               onClick={[MockFunction]}
             >
               Play again
@@ -213,12 +265,19 @@ ShallowWrapper {
             <div
               className="header"
             >
-              <h1>
-                You scored 
+              <p
+                className="score good"
+              >
+                NaN
+                %
+              </p>
+              <p>
+                You got 
                 0
-                /
+                 out of 
                 0
-              </h1>
+                 questions correct
+              </p>
             </div>,
             <div
               className="body results"
@@ -227,7 +286,7 @@ ShallowWrapper {
               className="cta"
             >
               <a
-                className="btn-block btn"
+                className="btn"
                 onClick={[MockFunction]}
               >
                 Play again
@@ -243,36 +302,67 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h1>
-                You scored 
-                0
-                /
-                0
-              </h1>,
+              "children": Array [
+                <p
+                  className="score good"
+                >
+                  NaN
+                  %
+                </p>,
+                <p>
+                  You got 
+                  0
+                   out of 
+                  0
+                   questions correct
+                </p>,
+              ],
               "className": "header",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "You scored ",
-                  0,
-                  "/",
-                  0,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    NaN,
+                    "%",
+                  ],
+                  "className": "score good",
+                },
+                "ref": null,
+                "rendered": Array [
+                  NaN,
+                  "%",
                 ],
+                "type": "p",
               },
-              "ref": null,
-              "rendered": Array [
-                "You scored ",
-                0,
-                "/",
-                0,
-              ],
-              "type": "h1",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "You got ",
+                    0,
+                    " out of ",
+                    0,
+                    " questions correct",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "You got ",
+                  0,
+                  " out of ",
+                  0,
+                  " questions correct",
+                ],
+                "type": "p",
+              },
+            ],
             "type": "div",
           },
           Object {
@@ -293,7 +383,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <a
-                className="btn-block btn"
+                className="btn"
                 onClick={[MockFunction]}
               >
                 Play again
@@ -307,7 +397,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Play again",
-                "className": "btn-block btn",
+                "className": "btn",
                 "onClick": [MockFunction],
               },
               "ref": null,
@@ -409,66 +499,33 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <span>
-          Failed
-           - 
-        </span>,
+      "children": <p>
+        <span
+          className="Failed"
+        >
+          <FaClose />
+        </span>
         <span
           dangerouslySetInnerHTML={
             Object {
               "__html": "Fake string",
             }
           }
-        />,
-      ],
-      "className": "result Failed",
+        />
+      </p>,
+      "className": "result-card",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Failed",
-            " - ",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Failed",
-          " - ",
-        ],
-        "type": "span",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "dangerouslySetInnerHTML": Object {
-            "__html": "Fake string",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "span",
-      },
-    ],
-    "type": "p",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <span>
-            Failed
-             - 
+          <span
+            className="Failed"
+          >
+            <FaClose />
           </span>,
           <span
             dangerouslySetInnerHTML={
@@ -478,7 +535,6 @@ ShallowWrapper {
             }
           />,
         ],
-        "className": "result Failed",
       },
       "ref": null,
       "rendered": Array [
@@ -487,16 +543,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Failed",
-              " - ",
-            ],
+            "children": <FaClose />,
+            "className": "Failed",
           },
           "ref": null,
-          "rendered": Array [
-            "Failed",
-            " - ",
-          ],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": "span",
         },
         Object {
@@ -514,6 +573,91 @@ ShallowWrapper {
         },
       ],
       "type": "p",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <p>
+          <span
+            className="Failed"
+          >
+            <FaClose />
+          </span>
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Fake string",
+              }
+            }
+          />
+        </p>,
+        "className": "result-card",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="Failed"
+            >
+              <FaClose />
+            </span>,
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Fake string",
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <FaClose />,
+              "className": "Failed",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "dangerouslySetInnerHTML": Object {
+                "__html": "Fake string",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "p",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
