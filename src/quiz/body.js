@@ -27,7 +27,7 @@ export default class Body extends React.Component {
 
         this.props.onAnswer(data);
 
-        const quiz_length = this.props.quiz.length - 1;
+        const quizLength = this.props.quiz.length - 1;
 
         if (this.state.currentQuestionIndex === quiz_length) {
             this.props.showResults();
@@ -37,7 +37,7 @@ export default class Body extends React.Component {
     };
 
     // render methods
-    render_options = (currentIndex, quiz) => {
+    renderOptions = (currentIndex, quiz) => {
         return (
             <React.Fragment>
                 <div className="options">
@@ -66,16 +66,16 @@ export default class Body extends React.Component {
             </React.Fragment>
         );
     };
-    render_quiz = (currentIndex, quiz, quiz_length) => {
+    renderQuiz = (currentIndex, quiz, quizLength) => {
         return (
             <React.Fragment>
                 <QuizCard 
-                    item={quiz[currentIndex]} currentInd={currentIndex + 1} length={quiz_length} />
+                    item={quiz[currentIndex]} currentInd={currentIndex + 1} length={quizLength} />
                 {this.render_options(currentIndex, quiz)}
             </React.Fragment>
         );
     };
-    render_loader = () => {
+    renderLoader = () => {
         return (
             <div className="loader center">
                 <div className="preloader-wrapper active">
@@ -92,7 +92,7 @@ export default class Body extends React.Component {
             </div>
         );
     };
-    render_error = () => {
+    renderError = () => {
         // check if user is offline
         const isOffline = !navigator.onLine;
         return (
@@ -112,10 +112,10 @@ export default class Body extends React.Component {
             <div className="container quiz">
                 <div className="content">
                     {this.props.showLoading
-                        ? this.render_loader()
+                        ? this.renderLoader()
                         : this.props.error
-                            ? this.render_error()
-                            : this.render_quiz(currentIndex, quiz, quiz.length)}
+                            ? this.renderError()
+                            : this.renderQuiz(currentIndex, quiz, quiz.length)}
                 </div>
             </div>
         );
