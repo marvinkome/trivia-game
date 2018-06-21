@@ -1,0 +1,527 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results unit tests renders body correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Body
+    answers={Array []}
+    playAgain={[MockFunction]}
+    score={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="content"
+      >
+        <div
+          className="header"
+        >
+          <h1>
+            You scored 
+            0
+            /
+            0
+          </h1>
+        </div>
+        <div
+          className="body results"
+        />
+        <div
+          className="cta"
+        >
+          <a
+            className="btn-block btn"
+            onClick={[MockFunction]}
+          >
+            Play again
+          </a>
+        </div>
+      </div>,
+      "className": "results container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+          >
+            <h1>
+              You scored 
+              0
+              /
+              0
+            </h1>
+          </div>,
+          <div
+            className="body results"
+          />,
+          <div
+            className="cta"
+          >
+            <a
+              className="btn-block btn"
+              onClick={[MockFunction]}
+            >
+              Play again
+            </a>
+          </div>,
+        ],
+        "className": "content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              You scored 
+              0
+              /
+              0
+            </h1>,
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "You scored ",
+                0,
+                "/",
+                0,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "You scored ",
+              0,
+              "/",
+              0,
+            ],
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "body results",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="btn-block btn"
+              onClick={[MockFunction]}
+            >
+              Play again
+            </a>,
+            "className": "cta",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Play again",
+              "className": "btn-block btn",
+              "onClick": [MockFunction],
+            },
+            "ref": null,
+            "rendered": "Play again",
+            "type": "a",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            <h1>
+              You scored 
+              0
+              /
+              0
+            </h1>
+          </div>
+          <div
+            className="body results"
+          />
+          <div
+            className="cta"
+          >
+            <a
+              className="btn-block btn"
+              onClick={[MockFunction]}
+            >
+              Play again
+            </a>
+          </div>
+        </div>,
+        "className": "results container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="header"
+            >
+              <h1>
+                You scored 
+                0
+                /
+                0
+              </h1>
+            </div>,
+            <div
+              className="body results"
+            />,
+            <div
+              className="cta"
+            >
+              <a
+                className="btn-block btn"
+                onClick={[MockFunction]}
+              >
+                Play again
+              </a>
+            </div>,
+          ],
+          "className": "content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1>
+                You scored 
+                0
+                /
+                0
+              </h1>,
+              "className": "header",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You scored ",
+                  0,
+                  "/",
+                  0,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "You scored ",
+                0,
+                "/",
+                0,
+              ],
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [],
+              "className": "body results",
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="btn-block btn"
+                onClick={[MockFunction]}
+              >
+                Play again
+              </a>,
+              "className": "cta",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Play again",
+                "className": "btn-block btn",
+                "onClick": [MockFunction],
+              },
+              "ref": null,
+              "rendered": "Play again",
+              "type": "a",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`results unit tests renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Results
+    user_answers={
+      Object {
+        "all_answers": Array [],
+        "score": 0,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "answers": Array [],
+      "playAgain": [Function],
+      "score": 0,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "answers": Array [],
+        "playAgain": [Function],
+        "score": 0,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`results unit tests renders show results 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ShowResult
+    question="Fake string"
+    resultType="Failed"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span>
+          Failed
+           - 
+        </span>,
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Fake string",
+            }
+          }
+        />,
+      ],
+      "className": "result Failed",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Failed",
+            " - ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Failed",
+          " - ",
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "dangerouslySetInnerHTML": Object {
+            "__html": "Fake string",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+    ],
+    "type": "p",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span>
+            Failed
+             - 
+          </span>,
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Fake string",
+              }
+            }
+          />,
+        ],
+        "className": "result Failed",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Failed",
+              " - ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Failed",
+            " - ",
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "dangerouslySetInnerHTML": Object {
+              "__html": "Fake string",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "span",
+        },
+      ],
+      "type": "p",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
