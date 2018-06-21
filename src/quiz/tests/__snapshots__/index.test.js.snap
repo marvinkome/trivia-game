@@ -29,9 +29,35 @@ ShallowWrapper {
         <div
           className="loader center"
         >
-          <h5>
-            Loading questions, please wait
-          </h5>
+          <div
+            className="preloader-wrapper active"
+          >
+            <div
+              className="spinner-layer spinner-red-only"
+            >
+              <div
+                className="circle-clipper left"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="gap-patch"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="circle-clipper right"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>,
       "className": "container quiz",
@@ -45,9 +71,35 @@ ShallowWrapper {
         "children": <div
           className="loader center"
         >
-          <h5>
-            Loading questions, please wait
-          </h5>
+          <div
+            className="preloader-wrapper active"
+          >
+            <div
+              className="spinner-layer spinner-red-only"
+            >
+              <div
+                className="circle-clipper left"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="gap-patch"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="circle-clipper right"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+            </div>
+          </div>
         </div>,
         "className": "content",
       },
@@ -57,9 +109,35 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <h5>
-            Loading questions, please wait
-          </h5>,
+          "children": <div
+            className="preloader-wrapper active"
+          >
+            <div
+              className="spinner-layer spinner-red-only"
+            >
+              <div
+                className="circle-clipper left"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="gap-patch"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="circle-clipper right"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+            </div>
+          </div>,
           "className": "loader center",
         },
         "ref": null,
@@ -68,11 +146,142 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Loading questions, please wait",
+            "children": <div
+              className="spinner-layer spinner-red-only"
+            >
+              <div
+                className="circle-clipper left"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="gap-patch"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+              <div
+                className="circle-clipper right"
+              >
+                <div
+                  className="circle"
+                />
+              </div>
+            </div>,
+            "className": "preloader-wrapper active",
           },
           "ref": null,
-          "rendered": "Loading questions, please wait",
-          "type": "h5",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="circle-clipper left"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>,
+                <div
+                  className="gap-patch"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>,
+                <div
+                  className="circle-clipper right"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>,
+              ],
+              "className": "spinner-layer spinner-red-only",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="circle"
+                  />,
+                  "className": "circle-clipper left",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="circle"
+                  />,
+                  "className": "gap-patch",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="circle"
+                  />,
+                  "className": "circle-clipper right",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
         },
         "type": "div",
       },
@@ -92,9 +301,35 @@ ShallowWrapper {
           <div
             className="loader center"
           >
-            <h5>
-              Loading questions, please wait
-            </h5>
+            <div
+              className="preloader-wrapper active"
+            >
+              <div
+                className="spinner-layer spinner-red-only"
+              >
+                <div
+                  className="circle-clipper left"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="gap-patch"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="circle-clipper right"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>,
         "className": "container quiz",
@@ -108,9 +343,35 @@ ShallowWrapper {
           "children": <div
             className="loader center"
           >
-            <h5>
-              Loading questions, please wait
-            </h5>
+            <div
+              className="preloader-wrapper active"
+            >
+              <div
+                className="spinner-layer spinner-red-only"
+              >
+                <div
+                  className="circle-clipper left"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="gap-patch"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="circle-clipper right"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+              </div>
+            </div>
           </div>,
           "className": "content",
         },
@@ -120,9 +381,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h5>
-              Loading questions, please wait
-            </h5>,
+            "children": <div
+              className="preloader-wrapper active"
+            >
+              <div
+                className="spinner-layer spinner-red-only"
+              >
+                <div
+                  className="circle-clipper left"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="gap-patch"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="circle-clipper right"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+              </div>
+            </div>,
             "className": "loader center",
           },
           "ref": null,
@@ -131,11 +418,142 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Loading questions, please wait",
+              "children": <div
+                className="spinner-layer spinner-red-only"
+              >
+                <div
+                  className="circle-clipper left"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="gap-patch"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+                <div
+                  className="circle-clipper right"
+                >
+                  <div
+                    className="circle"
+                  />
+                </div>
+              </div>,
+              "className": "preloader-wrapper active",
             },
             "ref": null,
-            "rendered": "Loading questions, please wait",
-            "type": "h5",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="circle-clipper left"
+                  >
+                    <div
+                      className="circle"
+                    />
+                  </div>,
+                  <div
+                    className="gap-patch"
+                  >
+                    <div
+                      className="circle"
+                    />
+                  </div>,
+                  <div
+                    className="circle-clipper right"
+                  >
+                    <div
+                      className="circle"
+                    />
+                  </div>,
+                ],
+                "className": "spinner-layer spinner-red-only",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="circle"
+                    />,
+                    "className": "circle-clipper left",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "circle",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="circle"
+                    />,
+                    "className": "gap-patch",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "circle",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="circle"
+                    />,
+                    "className": "circle-clipper right",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "circle",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
           },
           "type": "div",
         },

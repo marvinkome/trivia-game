@@ -29,7 +29,7 @@ export default class Body extends React.Component {
 
         const quizLength = this.props.quiz.length - 1;
 
-        if (this.state.currentQuestionIndex === quiz_length) {
+        if (this.state.currentQuestionIndex === quizLength) {
             this.props.showResults();
         } else {
             this.moveToNextQuestion();
@@ -71,7 +71,7 @@ export default class Body extends React.Component {
             <React.Fragment>
                 <QuizCard 
                     item={quiz[currentIndex]} currentInd={currentIndex + 1} length={quizLength} />
-                {this.render_options(currentIndex, quiz)}
+                {this.renderOptions(currentIndex, quiz)}
             </React.Fragment>
         );
     };
@@ -98,8 +98,9 @@ export default class Body extends React.Component {
         return (
             <div className="error center">
                 <h5>
-                    Error loading questions
-                    {isOffline && ', check you connection and reload the page'}
+                    It's not you it's us,
+                    {isOffline && ' Check your connection and'}
+                    {' '} try reloading the page
                 </h5>
             </div>
         );
