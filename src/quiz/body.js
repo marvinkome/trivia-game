@@ -27,9 +27,9 @@ export default class Body extends React.Component {
 
         this.props.onAnswer(data);
 
-        const quiz_length = this.props.quiz.length - 1;
+        const quizLength = this.props.quiz.length - 1;
 
-        if (this.state.currentQuestionIndex === quiz_length) {
+        if (this.state.currentQuestionIndex === quizLength) {
             this.props.showResults();
         } else {
             this.moveToNextQuestion();
@@ -37,7 +37,7 @@ export default class Body extends React.Component {
     };
 
     // render methods
-    render_options = (currentIndex, quiz) => {
+    renderOptions = (currentIndex, quiz) => {
         return (
             <React.Fragment>
                 <div className="options">
@@ -57,9 +57,6 @@ export default class Body extends React.Component {
                     </a>
                 </div>
                 <div className="meta-options">
-                    <p className="quiz-counter">
-                        {currentIndex + 1}/{quiz.length}
-                    </p>
                     <p>
                         <a onClick={(e) => this.answerQuestion(e, quiz[currentIndex], 'None')}>
                             Skip question
@@ -69,29 +66,41 @@ export default class Body extends React.Component {
             </React.Fragment>
         );
     };
-    render_quiz = (currentIndex, quiz) => {
+    renderQuiz = (currentIndex, quiz, quizLength) => {
         return (
             <React.Fragment>
-                <QuizCard item={quiz[currentIndex]} />
-                {this.render_options(currentIndex, quiz)}
+                <QuizCard 
+                    item={quiz[currentIndex]} currentInd={currentIndex + 1} length={quizLength} />
+                {this.renderOptions(currentIndex, quiz)}
             </React.Fragment>
         );
     };
-    render_loader = () => {
+    renderLoader = () => {
         return (
             <div className="loader center">
-                <h5>Loading questions, please wait</h5>
+                <div className="preloader-wrapper active">
+                    <div className="spinner-layer spinner-red-only">
+                        <div className="circle-clipper left">
+                            <div className="circle"></div>
+                        </div><div className="gap-patch">
+                            <div className="circle"></div>
+                        </div><div className="circle-clipper right">
+                            <div className="circle"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     };
-    render_error = () => {
+    renderError = () => {
         // check if user is offline
         const isOffline = !navigator.onLine;
         return (
             <div className="error center">
                 <h5>
-                    Error loading questions
-                    {isOffline && ', check you connection and reload the page'}
+                    It's not you it's us,
+                    {isOffline && ' Check your connection and'}
+                    {' '} try reloading the page
                 </h5>
             </div>
         );
@@ -104,10 +113,10 @@ export default class Body extends React.Component {
             <div className="container quiz">
                 <div className="content">
                     {this.props.showLoading
-                        ? this.render_loader()
+                        ? this.renderLoader()
                         : this.props.error
-                            ? this.render_error()
-                            : this.render_quiz(currentIndex, quiz)}
+                            ? this.renderError()
+                            : this.renderQuiz(currentIndex, quiz, quiz.length)}
                 </div>
             </div>
         );

@@ -3,18 +3,45 @@
         p {
             font-size: 15px;
             color: #575757;
+            flex: 1;
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        .question-progress {
+            span {
+                font-size: 15px;
+            }
+
+            .progress {
+                background-color: #e1bee7;
+
+                .determinate {
+                    background-color: #6a1b9a;
+                }
+            }
         }
     }
+
+    .preloader-wrapper .spinner-layer {
+        border-color: #6a1b9a;
+    }
+
     .options {
         .btn {
             text-align: left;
             background-color: hsl(0, 0%, 97%);
+            border: none;
             color: hsl(0, 0%, 33%);
             margin-bottom: 10px;
-            box-shadow: inset 0px 0px 4px 0px hsl(0, 0%, 95%);
+            border-radius: 12px;
+            box-shadow: 0px 0px 6px 0px hsl(0, 0%, 6%);
 
             &:hover {
                 background-color: hsl(0, 0%, 93%);
+                border: none;
             }
         }
     }

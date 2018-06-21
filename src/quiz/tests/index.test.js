@@ -92,7 +92,7 @@ describe('quiz page tests', () => {
     });
 
     it('renders quiz card correctly', () => {
-        const wrapper = shallow(<QuizCard item={data.results[0]} />);
+        const wrapper = shallow(<QuizCard item={data.results[0]} currentInd={1} length={2} />);
         expect(wrapper).toMatchSnapshot();
     });
 });
