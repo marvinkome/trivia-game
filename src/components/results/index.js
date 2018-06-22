@@ -2,13 +2,13 @@ import React from 'react';
 import types from 'prop-types';
 import { connect } from 'react-redux';
 import { Body } from './body';
-import { resetQuiz } from '../redux/actions';
+import { resetQuiz } from '../../redux/actions';
 import './styles.less';
 
 export class Results extends React.Component {
     playAgain = (e) => {
         e.preventDefault();
-        this.props.dispatch(resetQuiz());
+        this.props.resetQuiz();
         this.props.goTo('quiz');
     };
     render() {
@@ -30,4 +30,10 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(Results);
+function mapDispatchToProps(dispatch) {
+    return {
+        resetQuiz: () => dispatch(resetQuiz())
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Results);
