@@ -1,7 +1,7 @@
 import React from 'react';
 import types from 'prop-types';
 import { connect } from 'react-redux';
-import { answerQuestion, setupQuiz } from '../redux/actions';
+import { answerQuestion, setupQuiz } from '../../redux/actions';
 import Body from './body';
 import './styles.less';
 
@@ -25,7 +25,7 @@ export class Quiz extends React.Component {
             );
             const data = await response.json();
 
-            this.props.dispatch(setupQuiz(data));
+            this.props.setupQuiz(data);
 
             this.setState({
                 loading: false
@@ -41,7 +41,7 @@ export class Quiz extends React.Component {
         this.props.goTo('results');
     };
     dispatchAnswer = (answer) => {
-        this.props.dispatch(answerQuestion(answer));
+        this.props.answerQuestion(answer);
     };
     render() {
         return (
@@ -58,7 +58,8 @@ export class Quiz extends React.Component {
 
 Quiz.propTypes = {
     quiz: types.object,
-    dispatch: types.func,
+    setupQuiz: types.func,
+    answerQuestion: types.func,
     goTo: types.func
 };
 
@@ -68,4 +69,11 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(Quiz);
+function mapDispatchToProps(dispatch) {
+    return {
+        setupQuiz: (data) => dispatch(setupQuiz(data)),
+        answerQuestion: (data) => dispatch(answerQuestion(data))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);

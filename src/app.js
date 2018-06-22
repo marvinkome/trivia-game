@@ -11,9 +11,9 @@ import state from './default-state';
 import { Router, Route } from './router';
 
 // screens
-import Home from './home';
-import Quiz from './quiz';
-import Results from './results';
+import Home from './components/home';
+import Quiz from './components/quiz';
+import Results from './components/results';
 
 import 'materialize-css/dist/css/materialize.css';
 import './styles.less';

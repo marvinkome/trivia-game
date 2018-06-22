@@ -15,7 +15,7 @@ describe('quiz page tests', () => {
         fetch.mockResponseOnce(JSON.stringify(data));
         const props = {
             quiz: { results: [] },
-            dispatch: jest.fn(),
+            setupQuiz: jest.fn(),
             goTo: jest.fn()
         };
         const wrapper = shallow(<Quiz {...props} />);
